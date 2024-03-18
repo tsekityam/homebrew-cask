@@ -16,6 +16,8 @@ cask "pgadmin4" do
     regex(/href="v?(\d+(?:\.\d+)+)/i)
   end
 
+  auto_updates true
+  
   app "pgAdmin 4.app"
 
   zap trash: [
